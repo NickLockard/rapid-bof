@@ -1,0 +1,3 @@
+/usr/share/metasploit-framework/tools/exploit/nasm_shell.rb
+
+jmp esp
