@@ -11,8 +11,10 @@ Step 4. Once the start.sh steps have been completed navigate to: /root/scripts/3
 
 Step 5. If you know how many bytes it takes to overflow the buffer start with phase-01*
 
-Step 6. Once shellcode is generated in phase-10* you have to manually copy this shellcode which is found in a file called shellcode in the same working directory. Copy the shellcode and paste it in the shellcode section of phase-12*
+Step 6. When you get to phase-08* you should cat the find-optcode-* files for instructions
 
-Step 7. Before running phase-11* I recommend openging another terminal window to run just phase-11* as this will be your handler.
+Step 7. Once shellcode is generated in phase-10* you have to manually copy this shellcode which is found in a file called shellcode in the same working directory. Copy the shellcode and paste it in the shellcode section of phase-12*
+
+Step 8. Before running phase-11* I recommend openging another terminal window to run just phase-11* as this will be your handler.
 
 If you have any questions or find any bugs / errors, please let me know: admin@nicklockard.com
