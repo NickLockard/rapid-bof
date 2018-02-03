@@ -1,0 +1,16 @@
+#Step 1. Look at available Modules with the following command:
+!mona modules
+
+# Step 2. Identify a module that has the following values
+Rebase: False
+SafeSEH: False
+ASLR: False
+NXCompat: False
+
+# Step 3. Record file name, will use it to search for optcodes to jmp esp
+!mona find -s "\xff\xe4" -m slmfc.dll
+
+# Step 4. If optcodes aren't found may have to jmp another mem location, use find optcode metasploit nasm to identify hex value
+
+# Step 5. Click on the M for modules and look for Read Execute (R E) associated with said file (slmfc.dll)
+Double click on the line and identify memory address space and that will be used to record in little endian formate in place of the B's payload buffer.
